@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+".\objects\keil_startup_hk32f030m.o"
+".\objects\main.o"
+".\objects\hk32f030m_it.o"
+".\objects\system_hk32f030m.o"
+".\objects\hk32f030m_adc.o"
+".\objects\hk32f030m_awu.o"
+".\objects\hk32f030m_beep.o"
+".\objects\hk32f030m_crc.o"
+".\objects\hk32f030m_dbgmcu.o"
+".\objects\hk32f030m_exti.o"
+".\objects\hk32f030m_flash.o"
+".\objects\hk32f030m_gpio.o"
+".\objects\hk32f030m_i2c.o"
+".\objects\hk32f030m_iwdg.o"
+".\objects\hk32f030m_misc.o"
+".\objects\hk32f030m_pwr.o"
+".\objects\hk32f030m_rcc.o"
+".\objects\hk32f030m_spi.o"
+".\objects\hk32f030m_syscfg.o"
+".\objects\hk32f030m_tim.o"
+".\objects\hk32f030m_usart.o"
+".\objects\hk32f030m_wwdg.o"
+--library_type=microlib --strict --scatter ".\Objects\HK32F030M_Demo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\HK32F030M_Demo.map" -o .\Objects\HK32F030M_Demo.axf

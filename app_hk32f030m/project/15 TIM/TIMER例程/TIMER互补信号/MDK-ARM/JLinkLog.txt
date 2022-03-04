@@ -1,0 +1,84 @@
+T0814 91108:727.126   SEGGER J-Link V6.70e Log File
+T0814 91108:727.191   DLL Compiled: Apr 17 2020 17:55:05
+T0814 91108:727.200   Logging started @ 2021-04-02 02:45
+T0814 91108:727.213 JLINK_SetWarnOutHandler(...)
+T0814 91108:727.221 - 0.011ms
+T0814 91108:727.231 JLINK_OpenEx(...)
+T0814 91108:731.518   Firmware: J-Link ARM V8 compiled Nov 28 2014 13:44:46
+T0814 91108:734.771   Hardware: V8.00
+T0814 91108:734.792   S/N: 99999993
+T0814 91108:734.804   OEM: SEGGER
+T0814 91108:734.814   Feature(s): RDI,FlashDL,FlashBP,JFlash,GDBFULL
+T0814 91108:737.217   TELNET listener socket opened on port 19021
+T0814 91108:741.948   Device "STM32F030F4" selected.
+T0814 91108:750.595   WEBSRV Starting webserver
+T0814 91108:750.690   WEBSRV Failed to put socket into listener state (port 19080)
+T0814 91108:750.838   WEBSRV Webserver running on local port 19081
+T0814 91108:750.853 - 23.625ms returns "O.K."
+T0814 91108:751.569 JLINK_GetEmuCaps()
+T0814 91108:751.585 - 0.021ms returns 0xB9FF7BBF
+T0814 91108:751.601 JLINK_TIF_GetAvailable(...)
+T0814 91108:751.903 - 0.313ms
+T0814 91108:751.945 JLINK_SetErrorOutHandler(...)
+T0814 91108:751.954 - 0.013ms
+T0814 91108:751.972 JLINK_ExecCommand("ProjectFile = "E:\HK\1.Worksapce\MCU\3.HKMCU\6.API\HK\CM0\HK32F030M\04_Examples\HK32F030Mxx_ExampleV1.0.13\project\15 TIM\TIMERÀý³Ì\TIMER»¥²¹ÐÅºÅ\MDK-ARM\JLinkSettings.ini"", ...). 
+T0814 91108:760.429   Device "STM32F030F4" selected.
+T0814 91108:767.149 - 15.194ms returns 0x00
+T0814 91108:767.185 JLINK_ExecCommand("Device = HK32F39AVETx", ...). 
+T0814 91108:767.481   Device "STM32F030F4" selected.
+T0814 91108:774.848 - 7.668ms returns 0x00
+T0814 91108:774.877 JLINK_ExecCommand("DisableConnectionTimeout", ...). 
+T0814 91108:774.892 - 0.007ms returns 0x01
+T0814 91108:774.908 JLINK_GetHardwareVersion()
+T0814 91108:774.916 - 0.011ms returns 0x13880
+T0814 91108:774.927 JLINK_GetDLLVersion()  returns 67005
+T0814 91108:774.940 JLINK_GetFirmwareString(...)
+T0814 91108:774.948 - 0.011ms
+T0814 91108:774.964 JLINK_GetDLLVersion()  returns 67005
+T0814 91108:774.974 JLINK_GetCompileDateTime()
+T0814 91108:774.982 - 0.010ms
+T0814 91108:774.995 JLINK_GetFirmwareString(...)
+T0814 91108:775.002 - 0.011ms
+T0814 91108:775.012 JLINK_GetHardwareVersion()
+T0814 91108:775.021 - 0.012ms returns 0x13880
+T0814 91108:775.042 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T0814 91108:776.040 - 1.012ms returns 0x00
+T0814 91108:776.095 JLINK_SetSpeed(5000)
+T0814 91108:776.301 - 0.214ms
+T0814 91108:776.617 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+T0814 91108:776.628 - 0.015ms returns JLINKARM_RESET_TYPE_NORMAL
+T0814 91108:776.639 JLINK_Reset()
+T0814 91109:409.606   STM32 (connect): Can not attach to CPU. Trying connect under reset.
+T0814 91109:566.964   
+  ***** Error: 
+T0814 91109:567.033   STM32: Connecting to CPU via connect under reset failed.
+T0814 91109:790.381   STM32 (connect): Can not attach to CPU. Trying connect under reset.
+T0814 91109:946.915   
+  ***** Error: 
+T0814 91109:946.963   STM32: Connecting to CPU via connect under reset failed.
+T0814 91109:998.095 JLINK_GetId()
+T0814 91110:104.566   STM32 (connect): Can not attach to CPU. Trying connect under reset.
+T0814 91110:262.077   
+  ***** Error: 
+T0814 91110:262.105   STM32: Connecting to CPU via connect under reset failed.
+T0814 91110:485.737   STM32 (connect): Can not attach to CPU. Trying connect under reset.
+T0814 91110:643.297   
+  ***** Error: 
+T0814 91110:643.333   STM32: Connecting to CPU via connect under reset failed.
+T0814 91110:693.988 - 695.934ms   returns 0x00000000
+T0814 91110:694.090 JLINK_GetId()
+T0814 91110:799.885   STM32 (connect): Can not attach to CPU. Trying connect under reset.
+T0814 91110:957.443   
+  ***** Error: 
+T0814 91110:957.493   STM32: Connecting to CPU via connect under reset failed.
+T0814 91111:179.644   STM32 (connect): Can not attach to CPU. Trying connect under reset.
+T0814 91111:336.448   
+  ***** Error: 
+T0814 91111:336.484   STM32: Connecting to CPU via connect under reset failed.
+T0814 91111:387.308 - 693.249ms   returns 0x00000000
+T0814 91111:396.219 JLINK_GetFirmwareString(...)
+T0814 91111:396.244 - 0.029ms
+T0814 91112:608.423 JLINK_Close()
+T0814 91112:609.483 - 1.076ms
+T0814 91112:609.503   
+T0814 91112:609.511   Closed
