@@ -1,7 +1,5 @@
-.\objects\main.o: ..\Source\User\main.c
-.\objects\main.o: ..\Source\User\main.h
-.\objects\main.o: C:\software_install\keil\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\main.o: ..\Source\User\delay.h
+.\objects\main.o: ..\main.c
+.\objects\main.o: ..\board_config.h
 .\objects\main.o: ..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport\hk32f0xx.h
 .\objects\main.o: ..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\CoreSupport\core_cm0.h
 .\objects\main.o: C:\software_install\keil\ARM\ARMCC\Bin\..\include\stdint.h
@@ -32,4 +30,14 @@
 .\objects\main.o: ..\..\..\develop_lib\hk_lib\HK32F030\STD_LIB\inc\hk32f0xx_usart.h
 .\objects\main.o: ..\..\..\develop_lib\hk_lib\HK32F030\STD_LIB\inc\hk32f0xx_wwdg.h
 .\objects\main.o: ..\..\..\develop_lib\hk_lib\HK32F030\STD_LIB\inc\hk32f0xx_misc.h
-.\objects\main.o: ..\Source\Driver\Led\led.h
+.\objects\main.o: ..\..\..\develop_lib\develop_lib.h
+.\objects\main.o: ..\..\..\develop_lib\hk_lib\hk_lib.h
+.\objects\main.o: ..\..\..\develop_lib\hk_lib\gpio\hk_gpio.h
+.\objects\main.o: C:\software_install\keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: ..\..\..\develop_lib\hk_lib\systick\hk_systick.h
+.\objects\main.o: ..\..\..\develop_lib\middle_api\middle_api.h
+.\objects\main.o: ..\..\..\develop_lib\middle_api\delay\mid_delay.h
+.\objects\main.o: ..\..\..\develop_lib\middle_api\mid_gpio\mid_gpio.h
+.\objects\main.o: ..\..\..\develop_lib\middle_api\mid_systick\mid_systick.h
+.\objects\main.o: ..\..\..\develop_lib\lib_error.h
+.\objects\main.o: ..\..\..\develop_lib\util.h

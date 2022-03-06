@@ -1,8 +1,6 @@
 --cpu Cortex-M0
-".\objects\main.o"
 ".\objects\hk32f0xx_it.o"
-".\objects\delay.o"
-".\objects\led.o"
+".\objects\main.o"
 ".\objects\hk32f0xx_adc.o"
 ".\objects\hk32f0xx_can.o"
 ".\objects\hk32f0xx_cec.o"
@@ -26,8 +24,13 @@
 ".\objects\hk32f0xx_tim.o"
 ".\objects\hk32f0xx_usart.o"
 ".\objects\hk32f0xx_wwdg.o"
-".\objects\system_hk32f0xx.o"
 ".\objects\startup_hk32f030x8.o"
+".\objects\system_hk32f0xx.o"
+".\objects\hk_gpio.o"
+".\objects\hk_systick.o"
+".\objects\mid_gpio.o"
+".\objects\mid_systick.o"
+".\objects\mid_delay.o"
 --strict --scatter ".\Objects\Project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -1,4 +1,4 @@
-.\objects\system_hk32f0xx.o: ..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport\system_hk32f0xx.c
+.\objects\system_hk32f0xx.o: ..\system_hk32f0xx.c
 .\objects\system_hk32f0xx.o: ..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport\hk32f0xx.h
 .\objects\system_hk32f0xx.o: ..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\CoreSupport\core_cm0.h
 .\objects\system_hk32f0xx.o: C:\software_install\keil\ARM\ARMCC\Bin\..\include\stdint.h

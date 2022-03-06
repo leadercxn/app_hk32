@@ -337,9 +337,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_STDPERIPH_DRIVER,HK32F030</Define>
+              <Define>USE_STDPERIPH_DRIVER,HK32,HK32F030</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Source\User;..\Source\Driver\Led;..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\CoreSupport;..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport\startup;..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport;..\..\..\develop_lib\hk_lib\HK32F030\STD_LIB\inc</IncludePath>
+              <IncludePath>..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\CoreSupport;..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport\startup;..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport;..\..\..\develop_lib\hk_lib\HK32F030\STD_LIB\inc;..\..\..\develop_lib;..\..\..\develop_lib\hk_lib;..\..\..\develop_lib\hk_lib\gpio;..\..\..\develop_lib\hk_lib\systick;..\..\..\develop_lib\middle_api;..\..\..\develop_lib\middle_api\delay;..\..\..\develop_lib\middle_api\mid_gpio;..\..\..\develop_lib\middle_api\mid_systick;..\..\..\develop_lib\hardware;..\..\..\develop_lib\third_lib;..\..\app_hk32f030</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -381,83 +381,17 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>User</GroupName>
+          <GroupName>App</GroupName>
           <Files>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Source\User\main.c</FilePath>
-            </File>
             <File>
               <FileName>hk32f0xx_it.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\User\hk32f0xx_it.c</FilePath>
+              <FilePath>..\hk32f0xx_it.c</FilePath>
             </File>
             <File>
-              <FileName>delay.c</FileName>
+              <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Source\User\delay.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Driver</GroupName>
-          <Files>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Source\Driver\Led\led.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
+              <FilePath>..\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -585,21 +519,57 @@
           <GroupName>CMSIS</GroupName>
           <Files>
             <File>
-              <FileName>system_hk32f0xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport\system_hk32f0xx.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>MDK-ARM</GroupName>
-          <Files>
-            <File>
               <FileName>startup_hk32f030x8.s</FileName>
               <FileType>2</FileType>
               <FilePath>..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport\startup\startup_hk32f030x8.s</FilePath>
             </File>
+            <File>
+              <FileName>system_hk32f0xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\system_hk32f0xx.c</FilePath>
+            </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>hardware</GroupName>
+        </Group>
+        <Group>
+          <GroupName>hk_lib</GroupName>
+          <Files>
+            <File>
+              <FileName>hk_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\develop_lib\hk_lib\gpio\hk_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>hk_systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\develop_lib\hk_lib\systick\hk_systick.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>middle_api</GroupName>
+          <Files>
+            <File>
+              <FileName>mid_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\develop_lib\middle_api\mid_gpio\mid_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>mid_systick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\develop_lib\middle_api\mid_systick\mid_systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>mid_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\develop_lib\middle_api\delay\mid_delay.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>third_lib</GroupName>
         </Group>
       </Groups>
     </Target>

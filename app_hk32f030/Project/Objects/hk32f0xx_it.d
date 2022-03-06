@@ -1,5 +1,5 @@
-.\objects\hk32f0xx_it.o: ..\Source\User\hk32f0xx_it.c
-.\objects\hk32f0xx_it.o: ..\Source\User\hk32f0xx_it.h
+.\objects\hk32f0xx_it.o: ..\hk32f0xx_it.c
+.\objects\hk32f0xx_it.o: ..\hk32f0xx_it.h
 .\objects\hk32f0xx_it.o: ..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\DeviceSupport\hk32f0xx.h
 .\objects\hk32f0xx_it.o: ..\..\..\develop_lib\hk_lib\HK32F030\CMSIS\CM0\CoreSupport\core_cm0.h
 .\objects\hk32f0xx_it.o: C:\software_install\keil\ARM\ARMCC\Bin\..\include\stdint.h
